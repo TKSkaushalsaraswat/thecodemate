@@ -1,41 +1,113 @@
-import React from "react";
-import { Link, Redirect } from "react-router-dom";
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
+import React, { Fragment } from 'react';
+import { Link, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 const Landing = ({ isAuthenticated }) => {
   if (isAuthenticated) {
     return <Redirect to="/dashboard" />;
   }
   return (
-    <section className="landing">
-      <div className="dark-overlay">
-        <div className="landing-inner">
-          <h1 className="x-large">Developer Connector</h1>
-          <p className="lead">
-            Create a developer profile/portfolio, share posts and get help from
-            other developers
-          </p>
-          <div className="buttons">
-            <Link to="/register" className="btn btn-primary">
-              Sign Up
-            </Link>
-            <Link to="/login" className="btn btn-light">
-              Login
-            </Link>
+    <Fragment>
+      <section class="section section-top">
+        <div class="content rellax" data-rellax-speed="5">
+          <h1>Create developer profile/portfolio</h1>
+          <a href="#" class="btn btn-primary">
+            Learn More
+          </a>
+        </div>
+      </section>
+
+      <section class="section section-stream">
+        <img
+          class="play rellax"
+          src="https://i.ibb.co/TvdbMhQ/play-button.png"
+          alt=""
+          data-rellax-speed="-1"
+          data-rellax-xs-speed="-5"
+        />
+        <div class="content rellax" data-rellax-speed="5">
+          <div>
+            <h2 class="secondary-text">Stream Everything</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+              dicta consectetur incidunt omnis nam quis quidem nisi ipsa
+              deserunt.
+            </p>
+          </div>
+          <div>
+            <h2 class="secondary-text">Short is the New Long</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+              dicta consectetur incidunt omnis nam quis quidem nisi ipsa
+              deserunt.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="section section-grid">
+        <div class="rellax" data-rellax-speed="1" data-rellax-xs-speed="3">
+          <i class="fas fa-video fa-3x secondary-text"></i>
+          <h2>
+            Watch<span class="secondary-text dot">.</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+            dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+          </p>
+        </div>
+        <div class="rellax" data-rellax-speed="4" data-rellax-xs-speed="3">
+          <i class="fas fa-users fa-3x secondary-text"></i>
+          <h2>
+            Share<span class="secondary-text dot">.</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+            dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+          </p>
+        </div>
+        <div class="rellax" data-rellax-speed="7" data-rellax-xs-speed="3">
+          <i class="fas fa-book fa-3x secondary-text"></i>
+          <h2>
+            Learn<span class="secondary-text dot">.</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+            dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <ul>
+          <li>
+            <a href="#">Faq</a>
+          </li>
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+          <li>
+            <a href="#">Privacy Notice</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+        </ul>
+      </footer>
+    </Fragment>
   );
 };
 
 Landing.propTypes = {
-  isAuthenticated: PropTypes.bool
+  isAuthenticated: PropTypes.bool,
 };
 
-const mapStateToProps = state => ({
-  isAuthenticated: state.auth.isAuthenticated
+const mapStateToProps = (state) => ({
+  isAuthenticated: state.auth.isAuthenticated,
 });
 
 export default connect(mapStateToProps)(Landing);

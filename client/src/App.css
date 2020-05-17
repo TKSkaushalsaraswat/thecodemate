@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -245,10 +245,10 @@ img {
   color: #888;
 }
 
-.form input[type="text"],
-.form input[type="email"],
-.form input[type="password"],
-.form input[type="date"],
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='date'],
 .form select,
 .form textarea {
   display: block;
@@ -258,7 +258,7 @@ img {
   border: 1px solid #ccc;
 }
 
-.form input[type="submit"],
+.form input[type='submit'],
 button {
   font: inherit;
 }
@@ -300,18 +300,22 @@ button {
 
 /* Navbar */
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.2) !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0.7rem 2rem;
   position: fixed;
   z-index: 1;
   width: 100%;
   top: 0;
-  border-bottom: solid 1px var(--primary-color);
-  opacity: 0.9;
 }
-
 .navbar ul {
   display: flex;
 }
@@ -333,7 +337,7 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
-  background: url("./img/showcase.jpg") no-repeat center center/cover;
+  background: url('./img/showcase.jpg') no-repeat center center/cover;
   height: 100vh;
 }
 
@@ -364,10 +368,10 @@ button {
 .profile-grid {
   display: grid;
   grid-template-areas:
-    "top top"
-    "about about"
-    "exp edu"
-    "github github";
+    'top top'
+    'about about'
+    'exp edu'
+    'github github';
   grid-gap: 1rem;
 }
 
@@ -550,11 +554,11 @@ button {
 
   .profile-grid {
     grid-template-areas:
-      "top"
-      "about"
-      "exp"
-      "edu"
-      "github";
+      'top'
+      'about'
+      'exp'
+      'edu'
+      'github';
   }
 
   .profile-about .skills {
@@ -573,5 +577,196 @@ button {
   .post a,
   .post button {
     padding: 0.3rem 0.4rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(to right, #2b19cc, #164f85);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  background: var(--secondary--color);
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.primary-text {
+  color: var(--primary-color);
+}
+
+.secondary-text {
+  color: var(--secondary--color);
+}
+
+.section {
+  position: relative;
+  padding: 0 20px;
+}
+
+/* Section Top */
+.section-top {
+  min-height: 700px;
+  background: linear-gradient(
+      to right bottom,
+      rgb(86, 67, 250, 0.3),
+      rgba(32, 26, 92, 0.7)
+    ),
+    url('./img/evangeline-shaw-CiO3eBBxqJA-unsplash.jpg') no-repeat center
+      center/cover;
+}
+
+.section-top h1 {
+  font-size: 70px;
+  line-height: 1.3;
+  margin-top: 10rem;
+}
+
+.section-top .content {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  width: 55%;
+}
+
+/* Section Stream */
+.section-stream {
+  min-height: 700px;
+  background: url('https://i.ibb.co/bsX6RV0/bg2.png') no-repeat center
+    center/cover;
+}
+
+.section-stream h2 {
+  font-size: 35px;
+}
+
+.section-stream .play {
+  width: 27%;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+.section-stream .content {
+  position: absolute;
+  width: 50%;
+  top: 130px;
+  right: 70px;
+}
+
+.section-stream .content > div,
+.section-grid > div {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Section Grid */
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+}
+
+.section-grid p {
+  color: var(--text-color);
+}
+
+.section-grid .dot {
+  font-size: 40px;
+  padding-left: 2px;
+}
+
+/* Footer */
+.footer {
+  border-top: var(--text-color) 1px solid;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .section-top .content,
+  .section-stream .play,
+  .section-stream .content {
+    position: static;
+    width: 100%;
+  }
+
+  .section-top {
+    min-height: 200px;
+    padding-top: 20px;
+  }
+
+  .section-top .content {
+    text-align: center;
+  }
+
+  .section-top .content h1 {
+    font-size: 45px;
+  }
+
+  .section-stream {
+    min-height: 400px;
+  }
+
+  .section-stream .play {
+    width: 50%;
+    display: block;
+    margin: 30px auto;
+  }
+
+  .section-grid {
+    display: block;
+    margin-top: 0;
+  }
+
+  .footer ul {
+    display: block;
   }
 }
