@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import rellax from 'rellax';
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -11,8 +12,8 @@ const Landing = ({ isAuthenticated }) => {
     <Fragment>
       <section class="section section-top">
         <div class="content rellax" data-rellax-speed="5">
-          <h1>Create developer profile/portfolio</h1>
-          <a href="#" class="btn btn-primary">
+          <h1>Create simple and clean portfolio to showcase your spark</h1>
+          <a href="#" class="btn-1 btn--white">
             Learn More
           </a>
         </div>
