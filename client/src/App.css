@@ -1036,7 +1036,13 @@ ul {
     display: none;
   }
   .container {
+    width: 100%;
+    padding: 0.5rem;
     margin-top: 8rem;
+  }
+  .text-primary-blue {
+    font-size: 1.5rem;
+    text-align: center;
   }
   .x-large {
     font-size: 3rem;
@@ -1057,7 +1063,7 @@ ul {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-top: -0.5rem;
+    margin-top: 4.5rem;
   }
   .dash-buttons a {
     display: block;
@@ -1095,12 +1101,12 @@ ul {
     background: rgba(0, 0, 0, 0.6) !important;
   }
   .ind ul {
-    margin-left: -2.5rem;
+    margin-left: -0.5rem;
     text-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-top: -2.5rem;
+    margin-top: 1rem;
   }
 }
 .my-1 {

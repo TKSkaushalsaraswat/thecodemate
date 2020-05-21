@@ -16,7 +16,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
       ) : (
         <Fragment>
           <section class="container">
-            <h1 className="large text-primary-blue">
+            <h1 className="text-primary-blue">
               {' '}
               <i class="fas fa-terminal"></i> Browse and connect with developers
             </h1>
