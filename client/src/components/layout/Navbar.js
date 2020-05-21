@@ -15,7 +15,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       </li>
       <li>
         <Link to="/dashboard">
-          <i className="fas fa-user" />{' '}
+          <i className="fas fa-user-circle" />{' '}
           <span className="hide-sm">Dashboard</span>
         </Link>
       </li>
@@ -33,7 +33,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         <Link to="/profiles">Developers</Link>
       </li>
       <li>
-        <Link to="/register">Register</Link>
+        <Link to="/register">Signin</Link>
       </li>
       <li>
         <Link to="login">Login</Link>
@@ -42,10 +42,14 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   );
 
   return (
-    <nav className="navbar">
+    <nav className="navbar ind">
       <h1>
         <Link to="/">
-          <i className="fas fa-code"></i> DevConnector
+          <img
+            className="logo"
+            src="https://i.ibb.co/CM4jpyd/weblogo.png"
+            alt="theCodemate"
+          />
         </Link>
       </h1>
       {!loading && (

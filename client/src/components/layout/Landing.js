@@ -10,95 +10,100 @@ const Landing = ({ isAuthenticated }) => {
   }
   return (
     <Fragment>
-      <section class="section section-top">
-        <div class="content rellax" data-rellax-speed="5">
-          <h1>Create simple and clean portfolio to showcase your spark</h1>
-          <a href="#" class="btn-1 btn--white">
-            Learn More
-          </a>
-        </div>
-      </section>
+      <section className="bg-blue">
+        <section class="section section-top">
+          <div class="content" data-rellax-speed="5">
+            <h1>Create simple and clean portfolio to showcase your spark</h1>
+            <a href="#" class="btn-1 btn--white">
+              Learn More
+            </a>
+          </div>
+        </section>
 
-      <section class="section section-stream">
-        <img
-          class="play rellax"
-          src="https://i.ibb.co/TvdbMhQ/play-button.png"
-          alt=""
-          data-rellax-speed="-1"
-          data-rellax-xs-speed="-5"
-        />
-        <div class="content rellax" data-rellax-speed="5">
-          <div>
-            <h2 class="secondary-text">Stream Everything</h2>
+        <section class="section section-stream blue-bg">
+          <img
+            class="play lang"
+            src="https://i.ibb.co/Qm84H8W/web-technology-png-2.png"
+            alt=""
+            data-rellax-speed="-1"
+            data-rellax-xs-speed="-5"
+          />
+          <div class="content rellax" data-rellax-speed="5">
+            <div>
+              <h2 class="secondary-text">Stream Everything</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                et dicta consectetur incidunt omnis nam quis quidem nisi ipsa
+                deserunt.
+              </p>
+            </div>
+            <div>
+              <h2 class="secondary-text">Short is the New Long</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                et dicta consectetur incidunt omnis nam quis quidem nisi ipsa
+                deserunt.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-grid">
+          <div class="rellax" data-rellax-speed="1" data-rellax-xs-speed="3">
+            <i class="fas fa-video fa-3x secondary-text"></i>
+            <h2>
+              Watch<span class="secondary-text dot">.</span>
+            </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
               dicta consectetur incidunt omnis nam quis quidem nisi ipsa
               deserunt.
             </p>
           </div>
-          <div>
-            <h2 class="secondary-text">Short is the New Long</h2>
+          <div class="rellax" data-rellax-speed="4" data-rellax-xs-speed="3">
+            <i class="fas fa-users fa-3x secondary-text"></i>
+            <h2>
+              Share<span class="secondary-text dot">.</span>
+            </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
               dicta consectetur incidunt omnis nam quis quidem nisi ipsa
               deserunt.
             </p>
           </div>
-        </div>
-      </section>
+          <div class="rellax" data-rellax-speed="7" data-rellax-xs-speed="3">
+            <i class="fas fa-book fa-3x secondary-text"></i>
+            <h2>
+              Learn<span class="secondary-text dot">.</span>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+              dicta consectetur incidunt omnis nam quis quidem nisi ipsa
+              deserunt.
+            </p>
+          </div>
+        </section>
 
-      <section class="section section-grid">
-        <div class="rellax" data-rellax-speed="1" data-rellax-xs-speed="3">
-          <i class="fas fa-video fa-3x secondary-text"></i>
-          <h2>
-            Watch<span class="secondary-text dot">.</span>
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
-            dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
-          </p>
-        </div>
-        <div class="rellax" data-rellax-speed="4" data-rellax-xs-speed="3">
-          <i class="fas fa-users fa-3x secondary-text"></i>
-          <h2>
-            Share<span class="secondary-text dot">.</span>
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
-            dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
-          </p>
-        </div>
-        <div class="rellax" data-rellax-speed="7" data-rellax-xs-speed="3">
-          <i class="fas fa-book fa-3x secondary-text"></i>
-          <h2>
-            Learn<span class="secondary-text dot">.</span>
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
-            dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
-          </p>
-        </div>
+        <footer class="footer">
+          <ul>
+            <li>
+              <a href="#">Faq</a>
+            </li>
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+            <li>
+              <a href="#">Privacy Notice</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+          </ul>
+        </footer>
       </section>
-
-      <footer class="footer">
-        <ul>
-          <li>
-            <a href="#">Faq</a>
-          </li>
-          <li>
-            <a href="#">Terms of Use</a>
-          </li>
-          <li>
-            <a href="#">Privacy Notice</a>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
-          </li>
-          <li>
-            <a href="#">About Us</a>
-          </li>
-        </ul>
-      </footer>
     </Fragment>
   );
 };

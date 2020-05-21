@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const ProfileItem = ({
   profile: {
@@ -12,15 +12,15 @@ const ProfileItem = ({
   },
 }) => {
   return (
-    <div className="profile bg-light">
+    <div className="profile blue-bg">
       <img src={avatar} alt="" className="round-img" />
       <div>
-        <h2>{name}</h2>
-        <p>
+        <h2 className="my-1">{name}</h2>
+        <p className="my-1">
           {status} {company && <span> at {company}</span>}
         </p>
         <p className="my-1">{location && <span>{location}</span>}</p>
-        <Link to={`/profile/${_id}`} className="btn btn-primary">
+        <Link to={`/profile/${_id}`} className="btn-1 btn--white">
           View Profile
         </Link>
       </div>

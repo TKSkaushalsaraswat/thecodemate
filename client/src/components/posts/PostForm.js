@@ -1,22 +1,21 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { addPost } from "../../actions/post";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { addPost } from '../../actions/post';
 
 const PostForm = ({ addPost }) => {
-  const [text, setText] = useState("");
+  const [text, setText] = useState('');
 
   return (
-    <div className="post-form">
-      <div className="bg-primary p">
-        <h3>Say Something...</h3>
-      </div>
+    <div className="post-form-header">
+      <h3 className="my-1">Post Something...</h3>
+
       <form
         className="form my-1"
         onSubmit={(e) => {
           e.preventDefault();
           addPost({ text });
-          setText("");
+          setText('');
         }}
       >
         <textarea
@@ -28,7 +27,7 @@ const PostForm = ({ addPost }) => {
           onChange={(e) => setText(e.target.value)}
           required
         ></textarea>
-        <input type="submit" className="btn btn-dark my-1" value="Submit" />
+        <input type="submit" className="btn btn-dash-3 " value="Submit" />
       </form>
     </div>
   );

@@ -28,23 +28,25 @@ const Login = ({ login, isAuthenticated }) => {
 
   return (
     <Fragment>
-      <section className="container1 form-box">
-        <form className="form" onSubmit={(e) => onSubmit(e)}>
-          <h2 class="heading-secondary-form ma-bt-lg">Log into Your Account</h2>
+      <section className="container1 form-box-login">
+        <form onSubmit={(e) => onSubmit(e)} className="form">
+          <h2 className="heading-secondary-form ma-bt-lg">
+            Log into Your Account
+          </h2>
           <div className="form-group">
-            <label class="form__label" for="email">
+            <label className="form__label" for="email">
               Email address
             </label>
             <input
-              type="email"
-              placeholder="Email Address"
               name="email"
+              type="email"
               value={email}
+              placeholder="you@example.com"
               onChange={(e) => onChange(e)}
             />
           </div>
           <div className="form-group">
-            <label class="form__label" for="password">
+            <label className="form__label" for="password">
               Password
             </label>
             <input
@@ -53,6 +55,7 @@ const Login = ({ login, isAuthenticated }) => {
               name="password"
               value={password}
               onChange={(e) => onChange(e)}
+              minlength="6"
             />
           </div>
           <input type="submit" className="btn-1 btn--white" value="Login" />
