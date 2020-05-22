@@ -308,18 +308,18 @@ img {
     width: 100%;
   }
   .section-top {
-    min-height: 45rem;
-    padding-top: 20px;
+    min-height: 50rem;
+    padding-top: 5px;
   }
   .section-top a {
-    margin-top: 4rem;
+    margin-top: 7rem;
     width: 60%;
   }
   .section-top .content {
     text-align: center;
   }
   .section-top .content h1 {
-    margin-top: 18rem;
+    margin-top: 23rem;
     font-size: 2rem;
   }
   .section-stream {
