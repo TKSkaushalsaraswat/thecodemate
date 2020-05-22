@@ -34,7 +34,7 @@ const Login = ({ login, isAuthenticated }) => {
             Log into Your Account
           </h2>
           <div className="form-group">
-            <label className="form__label" for="email">
+            <label className="form__label" htmlFor="email">
               Email address
             </label>
             <input
@@ -46,7 +46,7 @@ const Login = ({ login, isAuthenticated }) => {
             />
           </div>
           <div className="form-group">
-            <label className="form__label" for="password">
+            <label className="form__label" htmlFor="password">
               Password
             </label>
             <input
