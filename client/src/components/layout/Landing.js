@@ -11,26 +11,26 @@ const Landing = ({ isAuthenticated }) => {
   return (
     <Fragment>
       <section className="bg-blue">
-        <section class="section section-top">
-          <div class="content" data-rellax-speed="5">
+        <section className="section section-top">
+          <div className="content" data-rellax-speed="5">
             <h1>Create simple and clean portfolio to showcase your spark</h1>
-            <a href="#" class="btn-1 btn--white">
+            <a href="#" className="btn-1 btn--white">
               Learn More
             </a>
           </div>
         </section>
 
-        <section class="section section-stream blue-bg">
+        <section className="section section-stream blue-bg">
           <img
-            class="play lang"
+            className="play lang"
             src="https://i.ibb.co/Qm84H8W/web-technology-png-2.png"
             alt=""
             data-rellax-speed="-1"
             data-rellax-xs-speed="-5"
           />
-          <div class="content rellax" data-rellax-speed="5">
+          <div className="content rellax" data-rellax-speed="5">
             <div>
-              <h2 class="secondary-text">Stream Everything</h2>
+              <h2 className="secondary-text">Stream Everything</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
                 et dicta consectetur incidunt omnis nam quis quidem nisi ipsa
@@ -38,7 +38,7 @@ const Landing = ({ isAuthenticated }) => {
               </p>
             </div>
             <div>
-              <h2 class="secondary-text">Short is the New Long</h2>
+              <h2 className="secondary-text">Short is the New Long</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
                 et dicta consectetur incidunt omnis nam quis quidem nisi ipsa
@@ -48,11 +48,15 @@ const Landing = ({ isAuthenticated }) => {
           </div>
         </section>
 
-        <section class="section section-grid">
-          <div class="rellax" data-rellax-speed="1" data-rellax-xs-speed="3">
-            <i class="fas fa-video fa-3x secondary-text"></i>
+        <section className="section section-grid">
+          <div
+            className="rellax"
+            data-rellax-speed="1"
+            data-rellax-xs-speed="3"
+          >
+            <i className="fas fa-video fa-3x secondary-text"></i>
             <h2>
-              Watch<span class="secondary-text dot">.</span>
+              Watch<span className="secondary-text dot">.</span>
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
@@ -60,10 +64,14 @@ const Landing = ({ isAuthenticated }) => {
               deserunt.
             </p>
           </div>
-          <div class="rellax" data-rellax-speed="4" data-rellax-xs-speed="3">
-            <i class="fas fa-users fa-3x secondary-text"></i>
+          <div
+            className="rellax"
+            data-rellax-speed="4"
+            data-rellax-xs-speed="3"
+          >
+            <i className="fas fa-users fa-3x secondary-text"></i>
             <h2>
-              Share<span class="secondary-text dot">.</span>
+              Share<span className="secondary-text dot">.</span>
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
@@ -71,10 +79,14 @@ const Landing = ({ isAuthenticated }) => {
               deserunt.
             </p>
           </div>
-          <div class="rellax" data-rellax-speed="7" data-rellax-xs-speed="3">
-            <i class="fas fa-book fa-3x secondary-text"></i>
+          <div
+            className="rellax"
+            data-rellax-speed="7"
+            data-rellax-xs-speed="3"
+          >
+            <i className="fas fa-book fa-3x secondary-text"></i>
             <h2>
-              Learn<span class="secondary-text dot">.</span>
+              Learn<span className="secondary-text dot">.</span>
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et

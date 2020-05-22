@@ -16,18 +16,20 @@ const ProfileItem = ({
       <img src={avatar} alt="" className="round-img" />
       <div>
         <h2 className="my-1">{name}</h2>
-        <p className="my-1">
+        <p className="my-1 profile-p">
           {status} {company && <span> at {company}</span>}
         </p>
-        <p className="my-1">{location && <span>{location}</span>}</p>
+        <p className="my-1 profile-p1 ">
+          {location && <span>{location}</span>}
+        </p>
         <Link to={`/profile/${_id}`} className="btn-1 btn--white">
           View Profile
         </Link>
       </div>
       <ul>
         {skills.slice(0, 4).map((skill, index) => (
-          <li key={index} className="text-primary">
-            <i className="fas fa-check"></i> {skill}
+          <li key={index} className="text-primary list-text">
+            <i className="fas fa-graduation-cap"></i> {skill}
           </li>
         ))}
       </ul>

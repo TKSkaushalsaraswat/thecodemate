@@ -40,7 +40,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         <form className="form" onSubmit={(e) => onSubmit(e)}>
           <h2 class="heading-secondary-form ma-bt-lg">Create Your Account</h2>
           <div className="form-group">
-            <label class="form__label" for="name">
+            <label class="form__label" htmlFor="name">
               Name
             </label>
             <input
@@ -52,7 +52,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             />
           </div>
           <div className="form-group">
-            <label class="form__label" for="email">
+            <label class="form__label" htmlFor="email">
               Email
             </label>
             <input
@@ -64,7 +64,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             />
           </div>
           <div className="form-group">
-            <label class="form__label" for="password">
+            <label class="form__label" htmlFor="password">
               Password
             </label>
             <input
@@ -76,7 +76,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             />
           </div>
           <div className="form-group">
-            <label class="form__label" for="passwordConfirm">
+            <label class="form__label" htmlFor="passwordConfirm">
               Password Confirm
             </label>
             <input
@@ -87,6 +87,17 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
               onChange={(e) => onChange(e)}
             />
           </div>
+          <p class="lead">
+            Manage your profile image using
+            <a
+              class="gravtar-link"
+              target="_blank"
+              href="https://en.gravatar.com/"
+            >
+              {' '}
+              Gravtar.
+            </a>
+          </p>
           <input type="submit" className="btn-1 btn--white" value="Register" />
         </form>
       </section>
