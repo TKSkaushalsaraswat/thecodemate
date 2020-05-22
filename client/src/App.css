@@ -250,8 +250,6 @@ img {
 }
 .section-stream {
   min-height: 700px;
-  background: url('https://i.ibb.co/bsX6RV0/bg2.png') no-repeat center
-    center/cover;
 }
 .section-stream h2 {
   font-size: 35px;
@@ -393,7 +391,7 @@ img {
   box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
   padding: 3rem 3rem;
   border-radius: 5px;
-  margin-top: 6rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 .form-box-login {
@@ -1031,7 +1029,7 @@ ul {
   box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
   padding: 3rem 3rem;
   border-radius: 5px;
-  margin-top: 6rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 .btn-light {
