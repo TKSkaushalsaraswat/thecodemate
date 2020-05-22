@@ -31,6 +31,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
     }
   };
   if (isAuthenticated) {
+    setAlert('Register Successfuly', 'success');
     return <Redirect to="/dashboard" />;
   }
 
@@ -93,6 +94,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
               class="gravtar-link"
               target="_blank"
               href="https://en.gravatar.com/"
+              rel="noopener noreferrer"
             >
               {' '}
               Gravtar.

@@ -1,8 +1,9 @@
 import React, { Fragment, useState } from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { login } from '../../actions/auth';
+import { setAlert } from '../../actions/alert';
 
 const Login = ({ login, isAuthenticated }) => {
   const [formData, setFormData] = useState({
@@ -23,6 +24,7 @@ const Login = ({ login, isAuthenticated }) => {
   // Redirect if logged in
 
   if (isAuthenticated) {
+    setAlert('Login Successfuly', 'success');
     return <Redirect to="/dashboard" />;
   }
 
