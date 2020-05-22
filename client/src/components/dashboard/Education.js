@@ -9,7 +9,7 @@ const Education = ({ education, deleteEducation }) => {
     <tr key={edu._id}>
       <td>{edu.school}</td>
       <td className="hide-sm">{edu.degree}</td>
-      <td>
+      <td className="hide-sm">
         <Moment format="YYYY/MM/DD">{edu.from}</Moment> -{' '}
         {edu.to === null ? (
           ' Now '
@@ -22,7 +22,7 @@ const Education = ({ education, deleteEducation }) => {
           onClick={() => deleteEducation(edu._id)}
           className="btn btn-danger"
         >
-          <i class="far fa-trash-alt"></i> Delete
+          <i className="far fa-trash-alt hide-sm"></i> Delete
         </button>
       </td>
     </tr>
@@ -34,7 +34,7 @@ const Education = ({ education, deleteEducation }) => {
       <table className="table">
         <thead>
           <tr>
-            <th className="hide-sm">School</th>
+            <th>School</th>
             <th className="hide-sm">Degree</th>
             <th className="hide-sm">Years</th>
             <th />

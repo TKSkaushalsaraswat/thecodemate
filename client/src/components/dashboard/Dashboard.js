@@ -23,10 +23,10 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
-      <section class="container-dash form-box-3">
+      <section className="container-dash form-box-3">
         <h1 className="large text-primary-dash">
           {' '}
-          <i class="fab fa-buromobelexperte" aria-hidden="true"></i> User
+          <i className="fab fa-buromobelexperte" aria-hidden="true"></i> User
           Dashboard
         </h1>
         <p className="lead-dash">
@@ -39,12 +39,12 @@ const Dashboard = ({
             <Experience experience={profile.experience} />
             <Education education={profile.education} />
 
-            <div className="my-2">
+            <div className="my-1">
               <button
                 className="btn btn-danger"
                 onClick={() => deleteAccount()}
               >
-                <i class="fas fa-user-minus"></i> Delete My Account
+                <i className="fas fa-user-minus"></i> Delete My Account
               </button>
             </div>
           </Fragment>

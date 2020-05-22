@@ -55,7 +55,7 @@ const Login = ({ login, isAuthenticated }) => {
               name="password"
               value={password}
               onChange={(e) => onChange(e)}
-              minlength="6"
+              minLength="6"
             />
           </div>
           <input type="submit" className="btn-1 btn--white" value="Login" />

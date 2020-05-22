@@ -1041,6 +1041,11 @@ ul {
     padding: 0.5rem;
     margin-top: 8rem;
   }
+
+  .container1 {
+    width: 100%;
+    padding: 1rem;
+  }
   .text-primary-blue {
     font-size: 1.5rem;
     text-align: center;
@@ -1111,11 +1116,29 @@ ul {
   }
 
   .profile img {
-    width: 200px;
+    width: 190px;
+    margin: auto;
+  }
+  .table th {
     margin: auto;
   }
   .profile p {
     font-size: 0.9rem;
+  }
+  .lead-dash {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .text-primary-dash {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .heading-dash {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .container1 input {
+    width: 100%;
   }
 }
 .my-1 {
