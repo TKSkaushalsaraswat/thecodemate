@@ -3,7 +3,6 @@ import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addEducation } from '../../actions/profile';
-import NavbarWhite from './../layout/NavbarWhite';
 
 const AddEducation = ({ addEducation, history }) => {
   const [formData, setFormData] = useState({
@@ -33,7 +32,6 @@ const AddEducation = ({ addEducation, history }) => {
 
   return (
     <Fragment>
-      <NavbarWhite />
       <section className="container form-box-1">
         <h1 className="large text-primary-blue">
           <i class="fas fa-graduation-cap"></i> Add Your Education{' '}

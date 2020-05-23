@@ -3,7 +3,6 @@ import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createProfile } from '../../actions/profile';
-import NavbarWhite from './../layout/NavbarWhite';
 
 const CreateProfile = ({ createProfile, history }) => {
   const [formData, setFormData] = useState({
@@ -48,7 +47,6 @@ const CreateProfile = ({ createProfile, history }) => {
 
   return (
     <Fragment>
-      <NavbarWhite />
       <section class="container form-box-1">
         <h1 className="large text-primary-blue">Create Your Profile</h1>
         <p className="lead-profile">

@@ -8,7 +8,6 @@ import { getCurrentProfile, deleteAccount } from '../../actions/profile';
 import DashboardAction from '../../components/dashboard/DashboardAction';
 import Experience from './Experience';
 import Education from './Education';
-import NavbarWhite from './../layout/NavbarWhite';
 
 const Dashboard = ({
   getCurrentProfile,
@@ -24,7 +23,6 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
-      <NavbarWhite />
       <section className="container-dash form-box-3">
         <h1 className="large text-primary-dash">
           {' '}

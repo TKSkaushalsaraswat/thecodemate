@@ -4,7 +4,6 @@ import { Redirect } from 'react-router-dom';
 import { setAlert } from '../../actions/alert';
 import { register } from '../../actions/auth';
 import PropTypes from 'prop-types';
-import NavbarWhite from './../layout/NavbarWhite';
 
 const Register = ({ setAlert, register, isAuthenticated }) => {
   const [formData, setFormData] = useState({
@@ -38,7 +37,6 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
 
   return (
     <Fragment>
-      <NavbarWhite />
       <section className="container1 form-box">
         <form className="form" onSubmit={(e) => onSubmit(e)}>
           <h2 class="heading-secondary-form ma-bt-lg">Create Your Account</h2>
