@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { login } from '../../actions/auth';
 import { setAlert } from '../../actions/alert';
+import NavbarWhite from './../layout/NavbarWhite';
 
 const Login = ({ login, isAuthenticated }) => {
   const [formData, setFormData] = useState({
@@ -30,6 +31,7 @@ const Login = ({ login, isAuthenticated }) => {
 
   return (
     <Fragment>
+      <NavbarWhite />
       <section className="container1 form-box-login">
         <form onSubmit={(e) => onSubmit(e)} className="form">
           <h2 className="heading-secondary-form ma-bt-lg">

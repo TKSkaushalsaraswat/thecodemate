@@ -3,6 +3,7 @@ import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createProfile, getCurrentProfile } from '../../actions/profile';
+import NavbarWhite from './../layout/NavbarWhite';
 
 const initialState = {
   company: '',
@@ -68,6 +69,7 @@ const EditProfile = ({
 
   return (
     <Fragment>
+      <NavbarWhite />
       <section className="container form-box-1">
         <h1 className="large text-primary-blue">Edit Your Profile</h1>
         <p className="lead-profile">

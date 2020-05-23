@@ -5,6 +5,7 @@ import { getPosts } from '../../actions/post';
 import Spinner from '../layout/Spinner';
 import PostItem from './PostItem';
 import PostForm from './PostForm';
+import NavbarWhite from './../layout/NavbarWhite';
 
 const Posts = ({ getPosts, post: { posts, loading } }) => {
   useEffect(() => {
@@ -15,7 +16,8 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
     <Spinner />
   ) : (
     <Fragment>
-      <section class="container form-box-3">
+      <NavbarWhite />
+      <section className="container form-box-3">
         <p className="text-primary-blue">
           <i className="fab fa-ioxhost" aria-hidden="true"></i> Welcome to the
           community

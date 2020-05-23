@@ -3,6 +3,7 @@ import rellax from 'rellax';
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import Navbar from './../layout/Navbar';
 
 const Landing = ({ isAuthenticated }) => {
   if (isAuthenticated) {
@@ -10,6 +11,7 @@ const Landing = ({ isAuthenticated }) => {
   }
   return (
     <Fragment>
+      <Navbar />
       <section className="bg-blue">
         <section className="section section-top">
           <div className="content" data-rellax-speed="5">

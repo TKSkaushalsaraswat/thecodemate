@@ -7,6 +7,7 @@ import PostItem from '../posts/PostItem';
 import CommentForm from '../post/CommentForm';
 import CommentItem from '../post/CommentItem';
 import { getPost } from '../../actions/post';
+import NavbarWhite from './../layout/NavbarWhite';
 
 const Post = ({ getPost, post: { post, loading }, match }) => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
     <Spinner />
   ) : (
     <Fragment>
+      <NavbarWhite />
       <section class="container form-box-3">
         <Link to="/posts" className="btn-dash-3">
           Back to Posts

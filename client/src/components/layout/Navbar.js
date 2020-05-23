@@ -42,7 +42,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   );
 
   return (
-    <nav className="navbar ind">
+    <nav className="navbar-ind">
       <h1>
         <Link to="/">
           <img
