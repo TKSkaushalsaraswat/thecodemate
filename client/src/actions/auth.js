@@ -80,7 +80,7 @@ export const login = (email, password) => async (dispatch) => {
       payload: res.data,
     });
 
-    dispatch(setAlert('Login Successfuly ', 'success'));
+    dispatch(setAlert('You are logged in Successfuly ', 'success'));
     dispatch(loadUser());
   } catch (err) {
     const errors = err.response.data.errors;
