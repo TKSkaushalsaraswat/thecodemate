@@ -1146,6 +1146,7 @@ ul {
   .post h4 {
     font-size: 0.7rem;
   }
+
   .post a,
   .post button {
     padding: 0.3rem 0.4rem;
@@ -1665,5 +1666,14 @@ ul {
   }
   .profile {
     padding: 1rem;
+  }
+  .alert {
+    top: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 8rem;
+    -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
   }
 }
