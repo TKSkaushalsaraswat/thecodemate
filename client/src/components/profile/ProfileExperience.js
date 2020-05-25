@@ -1,21 +1,21 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Moment from "react-moment";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Moment from 'react-moment';
 
 const ProfileExperience = ({
-  experience: { company, title, location, current, to, from, description },
+  experience: { company, title, to, from, description },
 }) => {
   return (
-    <div>
-      <h3 class="text-dark">{company}</h3>
-      <p>
-        <moment format="YYYY/MM/DD">{from}</moment> -{" "}
-        {!to ? "Now" : <Moment format="YYYY/MM/DD">{to}</Moment>}
+    <div class="description-details">
+      <h3>{company}</h3>
+      <p class="date">
+        <moment format="YYYY/MM/DD">{from}</moment> -{' '}
+        {!to ? 'Now' : <Moment format="YYYY/MM/DD">{to}</Moment>}
       </p>
       <p>
         <strong>Position: </strong> {title}
       </p>
-      <p>
+      <p class="paragraph">
         <strong>Description: </strong> {description}
       </p>
     </div>

@@ -15,7 +15,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
         <Spinner />
       ) : (
         <Fragment>
-          <section className="container">
+          <section className="container-profile">
             <h1 className="text-primary-blue">
               {' '}
               <i className="fas fa-terminal"></i> Browse and connect with
