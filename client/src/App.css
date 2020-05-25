@@ -1125,9 +1125,9 @@ ul {
   }
   .post {
     max-width: 100%;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: -1fr;
-    font-size: 0.8rem;
+    -ms-grid-columns: -1fr;
+    grid-template-columns: 1fr;
+    font-size: 0.9rem;
     font-weight: 300;
     border: 1px solid #ccc;
     /* -ms-grid-columns: 1fr 4fr; */
@@ -1141,10 +1141,10 @@ ul {
     background-color: #f7f7f7;
   }
   .post img {
-    width: 50px;
+    width: 60px;
   }
   .post h4 {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   .post a,
   .post button {
