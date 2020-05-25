@@ -530,6 +530,8 @@ ul {
   margin-top: 10px;
 }
 .profile {
+  margin-left: auto;
+  margin-right: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 4fr 2fr;
@@ -1638,5 +1640,8 @@ ul {
     color: #333;
     font-size: 1rem;
     text-align: center;
+  }
+  .profile {
+    padding: 1rem;
   }
 }
