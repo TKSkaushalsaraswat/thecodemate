@@ -6,9 +6,9 @@ const ProfileEducation = ({
   experience: { school, degree, fieldofstudy, current, to, from, description },
 }) => {
   return (
-    <div class="description-details">
+    <div className="description-details">
       <h3>{school}</h3>
-      <p class="date">
+      <p className="date">
         <moment format="YYYY/MM/DD">{from}</moment> -{' '}
         {!to ? 'Now' : <Moment format="YYYY/MM/DD">{to}</Moment>}
       </p>
@@ -18,7 +18,7 @@ const ProfileEducation = ({
       <p>
         <strong>Field of Study: </strong> {fieldofstudy}
       </p>
-      <p class="paragraph">
+      <p className="paragraph">
         <strong>Description: </strong> {description}
       </p>
     </div>

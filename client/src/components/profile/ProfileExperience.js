@@ -6,16 +6,16 @@ const ProfileExperience = ({
   experience: { company, title, to, from, description },
 }) => {
   return (
-    <div class="description-details">
+    <div className="description-details">
       <h3>{company}</h3>
-      <p class="date">
+      <p className="date">
         <moment format="YYYY/MM/DD">{from}</moment> -{' '}
         {!to ? 'Now' : <Moment format="YYYY/MM/DD">{to}</Moment>}
       </p>
       <p>
         <strong>Position: </strong> {title}
       </p>
-      <p class="paragraph">
+      <p className="paragraph">
         <strong>Description: </strong> {description}
       </p>
     </div>

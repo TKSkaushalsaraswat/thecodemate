@@ -19,8 +19,8 @@ const ProfileTop = ({
 }) => {
   return (
     <div className="container2 profile-content">
-      <nav class="sidebar">
-        <div class="sidebar-user">
+      <nav className="sidebar">
+        <div className="sidebar-user">
           <img src={avatar} alt="" />
           <h1>{name}</h1>
           <h3>
@@ -30,113 +30,113 @@ const ProfileTop = ({
           </h3>
           <p>{location && <span>{location}</span>}</p>
         </div>
-        <ul class="side-nav">
+        <ul className="side-nav">
           {website && (
-            <li class="side-nav__item ">
+            <li className="side-nav__item ">
               <a
                 href={website}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="side-nav__link"
+                className="side-nav__link"
               >
-                <i class="fas fa-chalkboard-teacher fa-2x"></i>
-                <span class="hide-sm">Visit my Website</span>
+                <i className="fas fa-chalkboard-teacher fa-2x"></i>
+                <span className="hide-sm">Visit my Website</span>
               </a>
             </li>
           )}
           {social && social.twitter && (
-            <li class="side-nav__item">
+            <li className="side-nav__item">
               <a
                 href={social.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="side-nav__link"
+                className="side-nav__link"
               >
-                <i class="fab fa-twitter fa-2x"></i>
-                <span class="hide-sm">Follow Me on twitter</span>
+                <i className="fab fa-twitter fa-2x"></i>
+                <span className="hide-sm">Follow Me on twitter</span>
               </a>
             </li>
           )}{' '}
           {social && social.facebook && (
-            <li class="side-nav__item">
+            <li className="side-nav__item">
               <a
                 href={social.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="side-nav__link"
+                className="side-nav__link"
               >
-                <i class="fab fa-facebook fa-2x"></i>
-                <span class="hide-sm">follow Me on Facebook</span>
+                <i className="fab fa-facebook fa-2x"></i>
+                <span className="hide-sm">follow Me on Facebook</span>
               </a>
             </li>
           )}
           {social && social.linkdin && (
-            <li class="side-nav__item">
+            <li className="side-nav__item">
               <a
                 href={social.linkdin}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="side-nav__link"
+                className="side-nav__link"
               >
-                <i class="fab fa-linkedin fa-2x"></i>
-                <span class="hide-sm">follow Me on Linkedin</span>
+                <i className="fab fa-linkedin fa-2x"></i>
+                <span className="hide-sm">follow Me on Linkedin</span>
               </a>
             </li>
           )}
           {social && social.instagram && (
-            <li class="side-nav__item">
+            <li className="side-nav__item">
               <a
                 href={social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="side-nav__link"
+                className="side-nav__link"
               >
-                <i class="fab fa-instagram fa-2x"></i>
-                <span class="hide-sm">follow Me on instagram</span>
+                <i className="fab fa-instagram fa-2x"></i>
+                <span className="hide-sm">follow Me on instagram</span>
               </a>
             </li>
           )}
           {social && social.youtube && (
-            <li class="side-nav__item">
+            <li className="side-nav__item">
               <a
                 href={social.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="side-nav__link"
+                className="side-nav__link"
               >
-                <i class="fab fa-youtube fa-2x"></i>
-                <span class="hide-sm">follow Me on youtube</span>
+                <i className="fab fa-youtube fa-2x"></i>
+                <span className="hide-sm">follow Me on youtube</span>
               </a>
             </li>
           )}
         </ul>
 
-        <div class="legal">&copy; theCodemate</div>
+        <div className="legal">&copy; theCodemate</div>
       </nav>
 
-      <main class="hotel-view">
+      <main className="hotel-view">
         <div className="overview">
-          <h1 class="overview__heading">
+          <h1 className="overview__heading">
             Know More About <span className="overview-name">{name}</span>{' '}
           </h1>
 
-          <div class="overview__rating">
-            <i class="fas fa-user-circle"></i>
+          <div className="overview__rating">
+            <i className="fas fa-user-circle"></i>
           </div>
         </div>
 
-        <div class="user__info">
+        <div className="user__info">
           {bio && (
             <Fragment>
               <h1>{name.trim().split(' ')[0]}'s Bio</h1>
-              <p class="paragraph">{bio}</p>
+              <p className="paragraph">{bio}</p>
             </Fragment>
           )}
 
-          <div class="line"></div>
+          <div className="line"></div>
 
           <h1>Skill Set</h1>
-          <div class="skills">
+          <div className="skills">
             {skills.map((skill, index) => (
               <div key={index} className="p-1">
                 <i className="fas fa-check" aria-hidden="true"></i>
@@ -146,9 +146,9 @@ const ProfileTop = ({
           </div>
         </div>
 
-        <div class="detail">
-          <div class="description">
-            <h2 class="text-primary">Experiences</h2>
+        <div className="detail">
+          <div className="description">
+            <h2 className="text-primary">Experiences</h2>
             {experience.length > 0 ? (
               <Fragment>
                 {experience.map((experience) => (
@@ -162,8 +162,8 @@ const ProfileTop = ({
               <h4>No experience credentials</h4>
             )}
           </div>
-          <div class="description">
-            <h2 class="text-primary">Education</h2>
+          <div className="description">
+            <h2 className="text-primary">Education</h2>
             {education.length > 0 ? (
               <Fragment>
                 {education.map((education) => (

@@ -540,9 +540,9 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   grid-gap: 2rem;
-  padding: 1rem;
+  padding: 1.5rem;
   line-height: 1.8;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border-radius: 5px;
 }
 .text-primary-blue {
@@ -1265,7 +1265,7 @@ ul {
 
 .sidebar-user img {
   margin-top: 5rem;
-  width: 150px;
+  width: 200px;
   border: 2px solid #eb2f64;
   border-radius: 50%;
 }
