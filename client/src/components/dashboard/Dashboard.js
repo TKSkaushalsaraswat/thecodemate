@@ -26,8 +26,7 @@ const Dashboard = ({
       <section className="container-dash form-box-3">
         <h1 className="large text-primary-dash">
           {' '}
-          <i className="fab fa-buromobelexperte" aria-hidden="true"></i> User
-          Dashboard
+          <i class="fas fa-cogs" aria-hidden="true"></i> Account Settings
         </h1>
         <p className="lead-dash">
           <i className="fab fa-ioxhost" aria-hidden="true"></i> Welcome{' '}

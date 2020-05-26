@@ -16,7 +16,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       <li>
         <Link to="/dashboard">
           <i className="fas fa-user-circle" />{' '}
-          <span className="hide-sm">Dashboard</span>
+          <span className="hide-sm">Account</span>
         </Link>
       </li>
       <li>
@@ -36,9 +36,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         <Link to="/register">Signin</Link>
       </li>
       <li>
-        <Link to="login">
-          <i class="fas fa-sign-in-alt"></i> Login
-        </Link>
+        <Link to="login">Login</Link>
       </li>
     </ul>
   );

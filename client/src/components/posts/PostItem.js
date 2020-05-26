@@ -45,7 +45,7 @@ const PostItem = ({
                 <i className="fas fa-thumbs-down"></i>
               </button>
               <Link to={`/posts/${_id}`} className="btn-light btn-primary">
-                <i class="fas fa-comment" />{' '}
+                <i className="fas fa-comment" />{' '}
                 {comments.length > 0 && (
                   <span className="comment-count">{comments.length}</span>
                 )}
