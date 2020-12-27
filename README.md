@@ -1,4 +1,4 @@
-# Purchae Tours  Web App
+# theCodeMate : Create simple and clean portfolio to showcase your spark
 
 > This is a MERN stack application For Developers. It is a small Developers network app that includes authentication, profiles and forum posts.
 
